@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI NOVA - AI that works like a teammate</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{background:#08080f;color:#fff;overflow-x:hidden}
+.bg-glow{position:fixed;width:600px;height:600px;background:radial-gradient(circle,#6a11cb40,#2575fc20,transparent);filter:blur(80px);z-index:-1}
+.glow1{top:-100px;left:-100px}
+.glow2{bottom:0;right:-100px;background:radial-gradient(circle,#ff00cc30,#33339920,transparent)}
+nav{max-width:1100px;margin:20px auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;background:rgba(255,255,255,0.06);backdrop-filter:blur(20px);border-radius:100px;border:1px solid rgba(255,255,255,0.1)}
+.logo{font-weight:800;font-size:20px;display:flex;align-items:center;gap:8px}
+.logo span{width:28px;height:28px;background:linear-gradient(90deg,#a855f7,#ec4899);border-radius:8px;display:inline-block}
+.nav-links{display:flex;gap:25px;font-size:14px;opacity:0.7}
+.btn-primary{background:linear-gradient(90deg,#a855f7,#ec4899);padding:8px 16px;border-radius:100px;text-decoration:none;color:#fff;font-size:14px;font-weight:600}
+.hero{text-align:center;padding:80px 20px 40px;max-width:800px;margin:auto}
+.badge{display:inline-block;padding:6px 14px;border-radius:100px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);font-size:12px;margin-bottom:25px}
+.hero h1{font-size:64px;line-height:1.1;font-weight:800;letter-spacing:-2px}
+.hero p{opacity:0.6;margin:20px auto;max-width:500px;line-height:1.6}
+.cta{margin-top:30px;display:flex;gap:12px;justify-content:center}
+.cta a{padding:12px 22px;border-radius:100px;text-decoration:none;font-weight:600;font-size:14px}
+.cta .primary{background:linear-gradient(90deg,#a855f7,#ec4899);color:#fff}
+.cta .secondary{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.15)}
+.dashboard-preview{max-width:1000px;margin:50px auto;padding:15px;background:rgba(255,255,255,0.05);border-radius:24px;border:1px solid rgba(255,255,255,0.1)}
+.dashboard-preview img{width:100%;border-radius:16px}
+.dashboard-mock{background:#0e0e14;border-radius:16px;padding:20px;display:grid;grid-template-columns:160px 1fr;gap:20px}
+@media(max-width:700px){.hero h1{font-size:38px}.nav-links{display:none}.dashboard-mock{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="bg-glow glow1"></div>
+<div class="bg-glow glow2"></div>
+
+<nav>
+<div class="logo"><span></span> AI NOVA</div>
+<div class="nav-links"><span>Home</span><span>Features</span><span>Use Cases</span><span>Integrations</span></div>
+<div style="display:flex;gap:12px;align-items:center"><span style="font-size:14px;opacity:0.7">Sign in</span><a href="#" class="btn-primary">Get Started Free</a></div>
+</nav>
+
+<div class="hero">
+<div class="badge">✦ Collaborative Intelligence</div>
+<h1>AI that works like a<br>teammate.</h1>
+<p>AI NOVA is your all-in-one AI workspace — built to think, plan, and collaborate alongside your team. No setup. No prompts. Just pure team intelligence.</p>
+<div class="cta">
+<a href="#" class="primary">Get Started Free →</a>
+<a href="#" class="secondary">Book a Demo</a>
+</div>
+<p style="font-size:12px;margin-top:15px;opacity:0.4">No setup. No prompts. Just pure team intelligence.</p>
+</div>
+
+<div class="dashboard-preview">
+<div class="dashboard-mock">
+<div>
+<div style="opacity:0.5;font-size:12px;margin-bottom:15px">⚡ AI NOVA</div>
+<div style="background:rgba(168,85,247,0.2);padding:8px 12px;border-radius:8px;font-size:13px;margin-bottom:10px">Overview</div>
+<div style="opacity:0.4;font-size:13px;padding:6px">Sources</div>
+<div style="opacity:0.4;font-size:13px;padding:6px">Tasks</div>
+<div style="opacity:0.4;font-size:13px;padding:6px">Docs</div>
+</div>
+<div>
+<div style="display:flex;justify-content:space-between;margin-bottom:20px"><span style="font-size:14px">Welcome to AI NOVA Dashboard</span><span style="font-size:11px;background:linear-gradient(90deg,#a855f7,#ec4899);padding:4px 10px;border-radius:100px">+ New Brain</span></div>
+<h3>AI NOVA Brain Overview</h3>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:15px">
+<div style="background:rgba(255,255,255,0.05);padding:15px;border-radius:12px"><div style="font-size:11px;opacity:0.5">Overview</div><div style="font-size:24px;font-weight:800;margin-top:5px">3</div></div>
+<div style="background:rgba(255,255,255,0.05);padding:15px;border-radius:12px"><div style="font-size:11px;opacity:0.5">Upcoming meetings</div><div style="font-size:24px;font-weight:800;margin-top:5px">2</div></div>
+<div style="background:rgba(255,255,255,0.05);padding:15px;border-radius:12px"><div style="font-size:11px;opacity:0.5">Blocked</div><div style="font-size:24px;font-weight:800;margin-top:5px">1</div></div>
+<div style="background:rgba(255,255,255,0.05);padding:15px;border-radius:12px"><div style="font-size:11px;opacity:0.5">AI Suggestions</div><div style="font-size:24px;font-weight:800;margin-top:5px">5</div></div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
